@@ -1,0 +1,22 @@
+body {
+  color: var(--primary-text);
+  font-family: var(--main-font-family);
+  background-color: var(--pramary-bg);
+  background: var(--pramary-bg);
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+[class*='__container'] {
+  max-inline-size: 91.875rem;
+  margin-inline: auto;
+  padding-inline: 0.9375rem;
+}

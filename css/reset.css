@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: none;
+
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+input,
+textarea {
+  width: 100%;
+}
+button,
+select,
+option {
+  cursor: pointer;
+}
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+textarea {
+  appearance: none;
+}
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-collapse: inherit;
+  border-spacing: 0;
+  border-color: inherit;
+  vertical-align: inherit;
+  text-align: left;
+  font-weight: inherit;
+  -webkit-border-horizontal-spacing: 0;
+  -webkit-border-vertical-spacing: 0;
+}
+th,
+td {
+  display: inline;
+}

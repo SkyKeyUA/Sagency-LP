@@ -1,0 +1,24 @@
+[class*='--cover'] img,
+[class*='--cover'] video {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+[class*='--contain'] img,
+[class*='--contain'] video {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: contain;
+}
+@media (any-hover: hover) {
+  [class*='--img-hover'] img {
+    transition: filter 0.3s ease;
+  }
+
+  [class*='--img-hover']:hover img {
+    filter: var(--hover-icon);
+  }
+  [class*='--img-hover']:active img {
+    filter: none;
+  }
+}
