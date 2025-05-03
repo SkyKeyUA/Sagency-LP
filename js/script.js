@@ -8,6 +8,7 @@ function windowLoad() {
   html.classList.add('loaded');
   scrollActions();
   logoCarouselInit();
+  slidersInit();
 }
 function documentActions(e) {
   const targetElement = e.target;
@@ -46,11 +47,18 @@ function logoCarouselInit() {
         const delay = index === 0 ? 2500 : 0;
 
         setTimeout(showNextLogo, delay);
-      }, 600);
+      }, 1500);
     }, 1800);
   }
 
   if (logoItems.length > 0) {
     showNextLogo();
   }
+}
+function slidersInit() {
+  const sliderListFiveItems = new Swiper('.testimonials__swiper', {
+    slidesPerView: 1,
+    spaceBetween: 45,
+    autoHeight: true,
+  });
 }

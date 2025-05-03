@@ -78,11 +78,11 @@ html.loaded {
   position: absolute;
   inset-block-start: 50%;
   inset-inline-start: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, -50%);
   inline-size: 100%;
   block-size: 100%;
   opacity: 0;
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition: opacity 1.5s linear, transform 1.5s linear;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,12 +90,10 @@ html.loaded {
 
 .logo-carousel__list li.active {
   opacity: 1;
-  transform: translate(-50%, -50%);
 }
 
 .logo-carousel__list li.fade-out {
   opacity: 0;
-  transform: translate(-50%, 50%);
 }
 
 .story__title {
@@ -201,7 +199,6 @@ html.loaded {
   aspect-ratio: 88 / 52;
   background: url('../img/icons/double-chevron-down.svg') 0 0 / contain repeat-y;
   z-index: 2;
-  animation: background-position 30s linear infinite;
 }
 .cards-offer li:nth-child(odd) article::after {
   inset-inline-start: 62px;
@@ -274,7 +271,6 @@ html.loaded {
     aspect-ratio: 88 / 52;
     background: url('../img/icons/double-chevron-down.svg') 0 0 / contain repeat-y;
     z-index: 2;
-    animation: background-position 30s linear infinite;
   }
   .story {
     padding-block: 2.625rem 1.5625rem;
