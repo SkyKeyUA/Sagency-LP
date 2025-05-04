@@ -8,7 +8,12 @@
   --primary-text: #3f3e3d;
   --pramary-bg: #ffffff;
 
+  --testimonials-title: #000000;
+  --testimonials--body-background: rgba(63, 62, 61, 0.6);
+
   --header-text: #b0b0b0;
+  --footer-background: rgba(63, 62, 61, 0.85);
+  --footer-border: rgba(255, 255, 255, 0.2);
 
   --background-red: #ea3e3b;
   --background-pink: #f36467;
@@ -22,6 +27,8 @@
   --card-background-color: rgba(63, 62, 61, 0.15);
   --card-background-light-color: rgba(63, 62, 61, 0.07);
   --card-box-shadow-color: 8px 4px 10px 0px rgba(0, 0, 0, 0.1);
+
+  --contact-border: rgba(255, 255, 255, 0.8);
 
   --hover-icon: brightness(0) invert(28%) sepia(78%) saturate(3802%) hue-rotate(236deg)
     brightness(98%) contrast(97%);

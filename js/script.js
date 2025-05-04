@@ -57,8 +57,18 @@ function logoCarouselInit() {
 }
 function slidersInit() {
   const sliderListFiveItems = new Swiper('.testimonials__swiper', {
-    slidesPerView: 1,
+    slidesPerView: 3,
     spaceBetween: 45,
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    initialSlide: 2,
+    loopedSlides: 1,
+    speed: 800,
     autoHeight: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
   });
 }
