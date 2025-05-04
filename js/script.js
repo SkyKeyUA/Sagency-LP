@@ -2,23 +2,10 @@ window.addEventListener('load', windowLoad);
 const html = document.documentElement;
 
 function windowLoad() {
-  if (768 >= window.innerWidth) {
-    document.addEventListener('click', documentActions);
-  }
   html.classList.add('loaded');
   scrollActions();
   logoCarouselInit();
   slidersInit();
-}
-function documentActions(e) {
-  const targetElement = e.target;
-
-  if (targetElement.closest('.icon-menu')) {
-    html.classList.toggle('menu-open');
-  }
-  targetElement.closest('.menu__link') && html.classList.contains('menu-open')
-    ? html.classList.remove('menu-open')
-    : null;
 }
 function scrollActions() {
   window.addEventListener('scroll', scrollAction);
@@ -27,6 +14,69 @@ function scrollActions() {
     const header = document.querySelector('.header');
     header?.classList.toggle('header--scroll', scrollY > 20);
   }
+  const sections = document.querySelectorAll('section');
+  const headerLinks = document.querySelectorAll('header a');
+
+  if (768 >= window.innerWidth) {
+    const menuToggle = document.querySelector('.icon-menu');
+
+    menuToggle?.addEventListener('click', () => {
+      html.classList.toggle('menu-open');
+    });
+    headerLinks?.forEach((link) => {
+      link.addEventListener('click', () => {
+        html.classList.remove('menu-open');
+      });
+    });
+  }
+
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a[href]');
+    if (!link) return;
+    const href = link.getAttribute('href');
+    if (!href.startsWith('#')) return;
+
+    e.preventDefault();
+
+    if (href === '#') {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    } else {
+      const header = document.querySelector('header');
+      const headerHeight = header.offsetHeight;
+      const targetId = href.slice(1);
+      const targetSection = document.getElementById(targetId);
+
+      if (targetSection) {
+        const offsetTop = targetSection.offsetTop - headerHeight;
+
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth',
+        });
+      }
+    }
+  });
+
+  window.onscroll = () => {
+    sections.forEach((sec) => {
+      let top = window.scrollY;
+      let offset;
+      768 <= window.innerWidth ? (offset = sec.offsetTop - 300) : (offset = sec.offsetTop - 150);
+      let height = sec.offsetHeight;
+      let id = sec.getAttribute('id');
+      if (top >= offset && top < offset + height && id !== null) {
+        headerLinks?.forEach((links) => {
+          links?.classList.remove('active');
+          if (id !== 'contact') {
+            document.querySelector('header a[href*=' + id + ']').classList.add('active');
+          }
+        });
+      }
+    });
+  };
 }
 function logoCarouselInit() {
   const logoItems = document.querySelectorAll('.logo-carousel__list li');

@@ -33,6 +33,9 @@
 .menu a {
   transition: color 0.3s;
 }
+.menu a.active {
+  color: var(--pramary-bg);
+}
 .header__text {
   color: var(--pramary-bg);
   text-align: center;
