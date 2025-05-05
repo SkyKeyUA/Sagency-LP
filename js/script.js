@@ -70,9 +70,7 @@ function scrollActions() {
       if (top >= offset && top < offset + height && id !== null) {
         headerLinks?.forEach((links) => {
           links?.classList.remove('active');
-          if (id !== 'contact') {
-            document.querySelector('header a[href*=' + id + ']').classList.add('active');
-          }
+          document.querySelector('header a[href*=' + id + ']').classList.add('active');
         });
       }
     });
