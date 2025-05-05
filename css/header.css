@@ -9,7 +9,9 @@
   transition: background-color 0.3s;
 }
 .header--scroll {
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: rgba(63, 62, 61, 0.85);
+  backdrop-filter: blur(0.25rem);
+  -webkit-backdrop-filter: blur(0.25rem);
 }
 .header__container {
   display: grid;
