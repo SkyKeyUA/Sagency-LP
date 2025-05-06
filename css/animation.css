@@ -1,0 +1,39 @@
+@keyframes opacity {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes translateY {
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes rotate-left-right {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

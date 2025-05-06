@@ -31,10 +31,18 @@
   inline-size: 15.707%; /* 90/573 */
   max-inline-size: 5.6875rem; /* 91/16 */
   aspect-ratio: 1;
+  opacity: 0;
+  transform: translateY(0.625rem);
+  animation: opacity 1s linear 2s forwards, translateY 1s linear 2s forwards,
+    rotate-left-right 1s linear 3s forwards, scale 1s linear 4s forwards;
+  will-change: opacity, translateY;
 }
 .logo__company {
   max-inline-size: 30.6875rem; /* 491/16 */
   aspect-ratio: 491 / 119;
+  opacity: 0;
+  animation: opacity 1s linear 1s forwards;
+  will-change: opacity;
 }
 .menu ul {
   display: flex;
