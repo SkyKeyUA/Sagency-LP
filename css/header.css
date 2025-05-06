@@ -34,7 +34,7 @@
   opacity: 0;
   transform: translateY(0.625rem);
   animation: opacity 1s linear 2s forwards, translateY 1s linear 2s forwards,
-    rotate-left-right 1s linear 3s forwards, scale 1s linear 4s forwards;
+    rotate-left-right 1s linear 3s forwards;
   will-change: opacity, transform;
 }
 .logo__company {
