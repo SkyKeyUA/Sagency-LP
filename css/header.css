@@ -35,7 +35,7 @@
   transform: translateY(0.625rem);
   animation: opacity 1s linear 2s forwards, translateY 1s linear 2s forwards,
     rotate-left-right 1s linear 3s forwards, scale 1s linear 4s forwards;
-  will-change: opacity, translateY;
+  will-change: opacity, transform;
 }
 .logo__company {
   max-inline-size: 30.6875rem; /* 491/16 */
@@ -69,7 +69,7 @@
   font-weight: 600;
   line-height: 1.513;
   letter-spacing: 0.2062rem;
-  padding-block: 0.5rem 0.6875rem;
+  padding-block: 0.25rem 0.375rem;
   padding-inline: 0.9375rem;
   background: var(--background-red);
 }
@@ -80,7 +80,7 @@
 }
 @media (min-width: 600px) {
   .header__text {
-    font-size: 1.25rem; /* 20/16 */
+    font-size: 1.125rem; /* 18/16 */
   }
 }
 @media (min-width: 767.98px) {
