@@ -72,9 +72,9 @@ function scrollActions() {
         headerLinks?.forEach((links) => {
           links?.classList.remove('active');
           document.querySelector('header a[href*=' + id + ']').classList.add('active');
-          id === 'offer'
-            ? redLine.classList.add('arrow-hidden')
-            : redLine.classList.remove('arrow-hidden');
+          if (id === 'offer') {
+            redLine.classList.add('arrow-hidden');
+          }
         });
       }
     });
