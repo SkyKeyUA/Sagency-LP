@@ -10,7 +10,7 @@ function windowLoad() {
   slidersInit();
 
   if (header) {
-    const headerHeight = header.offsetHeight / 16;
+    const headerHeight = (header.offsetHeight - 1) / 16;
     redLine.style.insetBlockStart = `${headerHeight}rem`;
   }
 }
