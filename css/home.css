@@ -61,6 +61,13 @@ html.loaded {
   max-inline-size: 7.154472%; /* 88/1230 */
   aspect-ratio: 88 / 52;
   background: url('../img/icons/double-chevron-down.svg') 0 0 / contain repeat-y;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.arrow-hidden .red-line__image {
+  opacity: 0;
+  visibility: hidden;
 }
 .story__container,
 .offer__container {
