@@ -1,19 +1,20 @@
 window.addEventListener('load', windowLoad);
 const html = document.documentElement;
+const header = document.querySelector('.header');
+const redLine = document.querySelector('.red-line');
 
 function windowLoad() {
   html.classList.add('loaded');
   scrollActions();
   logoCarouselInit();
   slidersInit();
+
+  if (header) {
+    const headerHeight = header.offsetHeight / 16;
+    redLine.style.insetBlockStart = `${headerHeight}rem`;
+  }
 }
 function scrollActions() {
-  window.addEventListener('scroll', scrollAction);
-
-  function scrollAction() {
-    const header = document.querySelector('.header');
-    header?.classList.toggle('header--scroll', scrollY > 20);
-  }
   const sections = document.querySelectorAll('section');
   const headerLinks = document.querySelectorAll('header a');
 

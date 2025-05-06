@@ -10,18 +10,8 @@ html.loaded {
   opacity: 1;
 }
 .hero {
-  min-block-size: 100svh;
+  min-block-size: 70svh;
   position: relative;
-}
-.hero::after {
-  content: '';
-  position: absolute;
-  inset-block-end: 0;
-  inset-inline-start: 0;
-  height: 0.875rem;
-  inline-size: 100%;
-  background: var(--background-red);
-  filter: var(--line-shadow);
 }
 .hero__background {
   position: absolute;
@@ -29,12 +19,12 @@ html.loaded {
   inset-inline-start: 0;
   inline-size: 100%;
   block-size: 100%;
-  min-block-size: 100svh;
+  min-block-size: 70svh;
 }
 .hero__container {
   max-inline-size: 76.875rem;
-  min-block-size: 100svh;
-  padding-block: 15rem 2.1875rem;
+  min-block-size: 70svh;
+  padding-block: 2rem 2.1875rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -50,6 +40,27 @@ html.loaded {
   font-style: italic;
   line-height: 1.513;
   font-size: clamp(1rem, 3.75vw + 0.25rem, 3.625rem); /* 16 > 58 && 992 > 1440 */
+}
+.red-line {
+  background: var(--background-red);
+  filter: var(--line-shadow);
+  position: sticky;
+  inset-inline-start: 0;
+  z-index: 50;
+}
+.red-line__container {
+  block-size: 0.875rem;
+  max-inline-size: 76.875rem;
+  position: relative;
+}
+.red-line__image {
+  position: absolute;
+  inset-block-start: 4px;
+  inset-inline-end: 19.756%; /* 243/1230 */
+  inline-size: 100%;
+  max-inline-size: 7.154472%; /* 88/1230 */
+  aspect-ratio: 88 / 52;
+  background: url('../img/icons/double-chevron-down.svg') 0 0 / contain repeat-y;
 }
 .story__container,
 .offer__container {
@@ -439,18 +450,6 @@ html.loaded {
   }
 }
 @media (min-width: 479.98px) {
-  .hero__container::after {
-    content: '';
-    position: absolute;
-    inset-block-end: 0;
-    inset-inline-end: 16.504%; /* 203/1230 */
-    transform: translateY(80.769231%); /* 42/52 */
-    inline-size: 100%;
-    max-inline-size: 7.154472%; /* 88/1230 */
-    aspect-ratio: 88 / 52;
-    background: url('../img/icons/double-chevron-down.svg') 0 0 / contain repeat-y;
-    z-index: 2;
-  }
   .story {
     padding-block: 2.625rem 1.5625rem;
   }

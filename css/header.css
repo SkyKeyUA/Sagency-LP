@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: sticky;
   inset-block-start: 0;
   inset-inline-start: 0;
   inline-size: 100%;
@@ -7,11 +7,7 @@
   text-transform: uppercase;
   font-family: var(--second-font-family);
   transition: background-color 0.3s;
-}
-.header--scroll {
-  background-color: rgba(63, 62, 61, 0.85);
-  backdrop-filter: blur(0.25rem);
-  -webkit-backdrop-filter: blur(0.25rem);
+  background-color: rgba(63, 62, 61, 1);
 }
 .header__container {
   display: grid;
