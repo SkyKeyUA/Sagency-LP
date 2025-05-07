@@ -18,6 +18,12 @@ function scrollActions() {
   const sections = document.querySelectorAll('section');
   const headerLinks = document.querySelectorAll('header a');
 
+  window.addEventListener('scroll', scrollAction);
+
+  function scrollAction() {
+    header?.classList.toggle('header--scroll', scrollY > 20);
+  }
+
   if (768 >= window.innerWidth) {
     const menuToggle = document.querySelector('.icon-menu');
 

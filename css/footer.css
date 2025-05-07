@@ -1,8 +1,5 @@
 .footer {
   color: var(--pramary-bg);
-  background-color: var(--pramary-bg);
-}
-.footer__body {
   padding-block: 0.9375rem 0.75rem; /* 12/16 */
   background-color: var(--footer-background);
 }
@@ -83,7 +80,7 @@
   }
 }
 @media (min-width: 767.98px) {
-  .footer__body {
+  .footer {
     padding-block: 2.375rem 0.75rem; /* 12/16 */
   }
   .footer__full {

@@ -10,13 +10,8 @@ html.loaded {
   opacity: 1;
 }
 .hero {
-  min-block-size: 70svh;
+  min-block-size: 100svh;
   position: relative;
-}
-.story,
-.offer,
-.testimonials {
-  background: var(--pramary-bg);
 }
 .hero__background {
   position: absolute;
@@ -24,12 +19,11 @@ html.loaded {
   inset-inline-start: 0;
   inline-size: 100%;
   block-size: 100%;
-  min-block-size: 70svh;
+  min-block-size: 100svh;
 }
 .hero__container {
   max-inline-size: 76.875rem;
-  min-block-size: 70svh;
-  padding-block: 2rem 2.1875rem;
+  min-block-size: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -444,6 +438,9 @@ html.loaded {
   }
 }
 @media (min-width: 767.98px) {
+  .hero__container {
+    padding-block: 15.3125rem 2.1875rem;
+  }
   .logo-carousel {
     float: left;
     margin-inline-end: 2.5rem;
@@ -501,6 +498,9 @@ html.loaded {
   }
 }
 @media (max-width: 767.98px) {
+  .hero__container {
+    padding-block: 8.125rem 2.1875rem;
+  }
   .logo-carousel {
     margin-block-end: 1.5rem;
     margin-inline: auto;

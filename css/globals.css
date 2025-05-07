@@ -1,7 +1,7 @@
 body {
   color: var(--primary-text);
   font-family: var(--main-font-family);
-  background: var(--primary-text);
+  background: var(--pramary-bg);
 }
 .wrapper {
   min-height: 100%;
