@@ -31,3 +31,26 @@
     transform: rotate(0);
   }
 }
+@keyframes compass {
+  0% {
+    transform: rotate(45deg) translate(50px, -1000px) scale(0.5);
+  }
+  50% {
+    transform: rotate(45deg) translate(-100px, 25px) scale(0.5);
+  }
+  55% {
+    transform: rotate(0) translate(0) scale(1) translateX(0);
+  }
+  70% {
+    transform: rotate(-15deg);
+  }
+  80% {
+    transform: rotate(15deg);
+  }
+  90% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
