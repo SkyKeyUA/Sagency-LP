@@ -13,6 +13,11 @@ html.loaded {
   min-block-size: 70svh;
   position: relative;
 }
+.story,
+.offer,
+.testimonials {
+  background: var(--pramary-bg);
+}
 .hero__background {
   position: absolute;
   inset-block-start: 0;
