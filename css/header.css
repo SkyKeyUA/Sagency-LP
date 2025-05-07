@@ -18,21 +18,24 @@
 .header__logo a {
   position: relative;
   z-index: 5;
-  aspect-ratio: 573 / 159;
+  aspect-ratio: 572 / 148;
+  padding-inline-start: 14.161%; /* 81/572 */
+  padding-block-start: 5.245%; /* 30/572 */
 }
 .logo__compass {
   position: absolute;
   inset-block-start: 0;
-  inset-inline-end: 84.293%; /* 483/573 */
-  inline-size: 15.707%; /* 90/573 */
-  max-inline-size: 5.6875rem; /* 91/16 */
-  aspect-ratio: 1;
+  inset-inline-end: 84.266%; /* 482/572 */
+  inline-size: 15.699%; /* 89.8/572 */
+  max-inline-size: 5.6125rem; /* 89.8/16 */
+  aspect-ratio: 89.8 / 90.1;
   opacity: 0;
   animation: opacity 1s linear 2s forwards, compass 1s linear 2s forwards;
   will-change: opacity, transform;
 }
 .logo__company {
   max-inline-size: 30.6875rem; /* 491/16 */
+  inline-size: 100%;
   aspect-ratio: 491 / 119;
   opacity: 0;
   animation: opacity 1s linear 1s forwards;
@@ -91,6 +94,11 @@
   }
   .header__logo {
     justify-self: end;
+    max-inline-size: 35.75rem; /* 572/16 */
+    inline-size: 100%;
+  }
+  .header__logo a {
+    margin-block-start: -5.245%; /* 30/572 */
   }
   .header__text {
     align-self: start;
@@ -99,12 +107,6 @@
     inline-size: 100%;
     margin-inline-end: -0.9375rem;
     margin-block-start: 0.1875rem;
-  }
-  .header__logo a {
-    max-inline-size: 35.8125rem;
-    padding-inline-start: 14.311%; /* 82/573 */
-    padding-block-start: 6.981%; /* 40/573 */
-    margin-block-start: -6.981%;
   }
   .icon-menu {
     display: none;
@@ -134,10 +136,12 @@
     position: relative;
     z-index: 5;
   }
+  .header__logo {
+    max-inline-size: 11.25rem; /* 180/16 */
+    inline-size: 100%;
+  }
   .header__logo a {
     max-inline-size: 11.25rem; /* 180/16 */
-    padding-block-start: 0.5625rem; /* 9/16 */
-    padding-inline-start: 1.5625rem; /* 25/16 */
   }
   .menu-open body {
     overflow: hidden;

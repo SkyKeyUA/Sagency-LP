@@ -1,22 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1440 680">
-  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
-  <defs>
-    <style>
-      .st0 {
-        fill: none;
-      }
-
-      .st1 {
-        fill: url(#linear-gradient);
-        fill-rule: evenodd;
-      }
-    </style>
-    <linearGradient id="linear-gradient" x1="-245" y1="194.9" x2="-254.1" y2="214.4" gradientTransform="translate(117.6 422.6) rotate(45) scale(1 -1)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#c4272c"/>
-      <stop offset=".9" stop-color="#ef3b39"/>
-    </linearGradient>
-  </defs>
-  <rect class="st0" width="1440" height="680"/>
-  <path class="st1" d="M88.1,120.3l12.9,43.4,33.7-90.1-89.8,34,43.1,12.6h.1ZM119.2,89.2h0l-17.3,46.2-5.2-17.6-1.4-4.7h0l-4.7-1.4-17.4-5.1,45.9-17.4h0Z"/>
+<svg width="90" height="91" viewBox="0 0 90 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M43.2 46.7L56.1 90.1L89.8 0L0 34L43.1 46.6L43.2 46.7ZM74.3 15.6L57 61.8L51.8 44.2L50.4 39.5L45.7 38.1L28.3 33L74.2 15.6H74.3Z" fill="url(#paint0_linear_2126_224)"/>
+<defs>
+<linearGradient id="paint0_linear_2126_224" x1="37.2635" y1="37.9801" x2="44.6174" y2="17.7569" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C4272C"/>
+<stop offset="0.9" stop-color="#EF3B39"/>
+</linearGradient>
+</defs>
 </svg>
