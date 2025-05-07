@@ -42,13 +42,13 @@
     transform: rotate(0) translate(0) scale(1) translateX(0);
   }
   70% {
-    transform: rotate(-15deg);
+    transform: rotate(-10deg);
   }
   80% {
-    transform: rotate(15deg);
+    transform: rotate(10deg);
   }
   90% {
-    transform: rotate(-15deg);
+    transform: rotate(-10deg);
   }
   100% {
     transform: rotate(0);
