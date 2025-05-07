@@ -9,7 +9,6 @@
   transition: background-color 0.3s;
 }
 .header--scroll {
-  background-color: var(--footer-background);
   backdrop-filter: blur(0.25rem);
   -webkit-backdrop-filter: blur(0.25rem);
 }
