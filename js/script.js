@@ -79,6 +79,25 @@ function scrollActions() {
       }
     });
   };
+  const options = {
+    root: null,
+    rootMargin: '0px 0px 0px 0px',
+    threshold: 0.2,
+  };
+  const callback = (entries, observer) => {
+    entries.forEach((entry) => {
+      const currentElement = entry.target;
+      if (entry.isIntersecting) {
+        currentElement.classList.add('animate');
+      }
+    });
+  };
+  const observer = new IntersectionObserver(callback, options);
+
+  const animElements = document.querySelectorAll('[class*="--anim"]');
+  animElements.forEach((animElement) => {
+    observer.observe(animElement);
+  });
 }
 function logoCarouselInit() {
   const logoItems = document.querySelectorAll('.logo-carousel__list li');

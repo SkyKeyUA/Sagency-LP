@@ -245,8 +245,16 @@ html.loaded {
   font-weight: 600;
   line-height: 1.42; /* 34/24 */
 }
-
-.testimonials__container {
+.cards-offer__item--anim {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0.625rem);
+  transition: opacity 0.5s 0.3s linear, visibility 0.5s 0.3s linear, transform 0.5s 0.3s linear;
+}
+.cards-offer__item--anim.animate {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 .testimonials__title {
   color: var(--testimonials-title);
