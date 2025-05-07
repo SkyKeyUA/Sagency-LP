@@ -32,9 +32,9 @@
   max-inline-size: 5.6875rem; /* 91/16 */
   aspect-ratio: 1;
   opacity: 0;
-  transform: translateY(0.625rem);
-  animation: opacity 1s linear 2s forwards, translateY 1s linear 2s forwards,
-    rotate-left-right 1s linear 3s forwards;
+  transform: translateX(-62.5rem);
+  animation: opacity 1s linear 2s forwards, translateX 0.5s linear 2s forwards,
+    rotate-left-right 0.1s linear 2.6s forwards;
   will-change: opacity, transform;
 }
 .logo__company {

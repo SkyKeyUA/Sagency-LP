@@ -9,6 +9,11 @@
     transform: translateY(0);
   }
 }
+@keyframes translateX {
+  to {
+    transform: translateX(0);
+  }
+}
 @keyframes rotate-left-right {
   0% {
     transform: rotate(0);
