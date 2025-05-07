@@ -9,6 +9,7 @@
   transition: background-color 0.3s;
 }
 .header--scroll {
+  background-color: var(--footer-background);
   backdrop-filter: blur(0.25rem);
   -webkit-backdrop-filter: blur(0.25rem);
 }
@@ -84,7 +85,7 @@
 }
 @media (min-width: 767.98px) {
   .header {
-    padding-block: 1.75rem 0.625rem;
+    padding-block-start: 1.75rem;
   }
   .header__container {
     grid-template-columns: 573fr 680fr;
@@ -125,7 +126,7 @@
 }
 @media (max-width: 767.98px) {
   .header {
-    padding-block: 0.625rem;
+    padding-block-start: 0.625rem;
   }
   .header__container {
     grid-template-columns: 1fr auto;
