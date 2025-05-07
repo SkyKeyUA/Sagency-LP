@@ -1,5 +1,5 @@
 .footer {
-  padding-block: 0.625rem 0.75rem; /* 12/16 */
+  padding-block: 0.9375rem 0.75rem; /* 12/16 */
   background-color: var(--footer-background);
   color: var(--pramary-bg);
 }
@@ -8,8 +8,28 @@
   border-block-end: 0.0625rem solid var(--footer-border);
 }
 .footer__logo {
-  max-inline-size: 28.1875rem; /* 451/16 */
-  aspect-ratio: 451 / 133;
+  max-inline-size: 28.125rem; /* 450/16 */
+  inline-size: 100%;
+}
+.footer__full {
+  max-inline-size: 28.125rem; /* 450/16 */
+  aspect-ratio: 450 / 118;
+  inline-size: 100%;
+  padding-inline-start: 14%; /* 63/450 */
+  padding-block-start: 5.111%; /* 23/450 */
+  position: relative;
+  z-index: 5;
+}
+.footer__compass {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  max-inline-size: 15.964%; /* 72/451 */
+  aspect-ratio: 1;
+}
+.footer__company {
+  max-inline-size: 24.125rem; /* 386/16 */
+  aspect-ratio: 491 / 119;
 }
 .footer__text {
   text-align: center;
