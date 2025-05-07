@@ -6,7 +6,8 @@
   z-index: 50;
   text-transform: uppercase;
   font-family: var(--second-font-family);
-  background-color: rgba(63, 62, 61, 0.85);
+  transition: background-color 0.3s;
+  background-color: var(--footer-background);
   backdrop-filter: blur(0.25rem);
   -webkit-backdrop-filter: blur(0.25rem);
 }
@@ -18,12 +19,6 @@
   position: relative;
   z-index: 5;
   aspect-ratio: 573 / 159;
-}
-.logo {
-}
-.logo--contain {
-}
-.logo__full {
 }
 .logo__compass {
   position: absolute;
