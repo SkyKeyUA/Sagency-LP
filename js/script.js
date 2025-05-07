@@ -21,7 +21,10 @@ function scrollActions() {
   window.addEventListener('scroll', scrollAction);
 
   function scrollAction() {
-    header?.classList.toggle('header--scroll', scrollY > 20);
+    header?.classList.toggle(
+      'header--scroll',
+      scrollY > document.querySelector('.hero').offsetHeight - header.offsetHeight,
+    );
   }
 
   if (768 >= window.innerWidth) {
