@@ -273,7 +273,7 @@ html.loaded {
 .swiper-testimonials__slide {
   padding-block-start: 5.375rem; /* 86/16 */
   max-inline-size: 41.625rem; /* 666/16 */
-  inline-size: 100% !important;
+  block-size: 100% !important;
 }
 .swiper-testimonials__inner {
   background-color: var(--testimonials--body-background);
@@ -282,10 +282,14 @@ html.loaded {
   padding-inline: 2rem; /* 32/16 */
   text-align: center;
   position: relative;
+  block-size: 100% !important;
 }
 .swiper-testimonials__body {
   max-inline-size: 35.625rem; /* 570/16 */
   margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  block-size: 100%;
 }
 .swiper-slide__picture {
   position: absolute;
@@ -318,6 +322,7 @@ html.loaded {
   font-size: 1.125rem; /* 18/16 */
   line-height: 1.56; /* 28/18 */
   margin-block-end: 1.75rem; /* 28/16 */
+  flex-grow: 1;
 }
 .swiper-slide__phrase {
   font-size: 1.25rem; /* 20/16 */
