@@ -127,8 +127,8 @@ function logoCarouselInit() {
         const delay = index === 0 ? 2500 : 0;
 
         setTimeout(showNextLogo, delay);
-      }, 600);
-    }, 650);
+      }, 750);
+    }, 750);
   }
 
   if (logoItems.length > 0) {

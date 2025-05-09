@@ -99,7 +99,7 @@ html.loaded {
   inline-size: 100%;
   block-size: 100%;
   opacity: 0;
-  transition: opacity 0.6s linear;
+  transition: opacity 0.75s linear;
   display: flex;
   justify-content: center;
   align-items: center;
