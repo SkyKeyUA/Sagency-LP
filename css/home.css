@@ -503,10 +503,19 @@ html.loaded {
   }
 }
 @media (max-width: 767.98px) {
+  .hero {
+    min-block-size: 50svh;
+  }
+  .hero__background {
+    min-block-size: 50svh;
+  }
   .hero__container {
+    min-block-size: 50svh;
     padding-block: 8.125rem 2.1875rem;
   }
   .logo-carousel {
+    max-inline-size: 82vw;
+    aspect-ratio: 464 / 160;
     margin-block-end: 1.5rem;
     margin-inline: auto;
   }
