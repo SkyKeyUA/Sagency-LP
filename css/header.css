@@ -196,14 +196,14 @@
     transition: left 0.3s ease;
   }
   .menu {
-    block-size: 100%;
+    block-size: 100svh;
     padding-block: 10rem 2.5rem;
     padding-inline: 0.9375rem; /* 15/16 */
     overflow-y: auto;
   }
   .menu::after {
     content: '';
-    block-size: 4rem; /* 64/16 */
+    block-size: 6.875rem; /* 64/16 */
   }
   .menu-open .menu,
   .menu-open .menu::after {

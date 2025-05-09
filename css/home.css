@@ -45,7 +45,7 @@ html.loaded {
   filter: var(--line-shadow);
   position: sticky;
   inset-inline-start: 0;
-  z-index: 50;
+  z-index: 5;
 }
 .red-line__container {
   block-size: 0.875rem;
