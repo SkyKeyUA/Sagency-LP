@@ -32,6 +32,7 @@
   aspect-ratio: 491 / 119;
 }
 .footer__text {
+  font-family: var(--second-font-family);
   color: var(--pramary-bg);
   text-align: center;
   font-style: italic;
