@@ -491,6 +491,12 @@ html.loaded {
     min-inline-size: 20.4375rem;
   }
 }
+@media (max-width: 1283.98px) {
+  .story__container,
+  .offer__container {
+    max-inline-size: 70.625rem; /* 1130/16 */
+  }
+}
 @media (max-width: 991.98px) and (min-width: 767.98px) {
   .logo-carousel {
     max-inline-size: 18.75rem; /* 300/16 */
