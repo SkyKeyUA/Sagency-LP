@@ -17,7 +17,6 @@ function windowLoad() {
 function scrollActions() {
   const sections = document.querySelectorAll('section');
   const headerLinks = document.querySelectorAll('header a');
-
   window.addEventListener('scroll', scrollAction);
 
   function scrollAction() {
@@ -26,7 +25,7 @@ function scrollActions() {
       scrollY > document.querySelector('.hero').offsetHeight - header.offsetHeight,
     );
   }
-
+  scrollAction();
   if (768 >= window.innerWidth) {
     const menuToggle = document.querySelector('.icon-menu');
 
