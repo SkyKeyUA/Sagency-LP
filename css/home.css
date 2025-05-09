@@ -10,7 +10,7 @@ html.loaded {
   opacity: 1;
 }
 .hero {
-  min-block-size: 100svh;
+  min-block-size: 70svh;
   position: relative;
 }
 .hero__background {
@@ -19,11 +19,11 @@ html.loaded {
   inset-inline-start: 0;
   inline-size: 100%;
   block-size: 100%;
-  min-block-size: 100svh;
+  min-block-size: 70svh;
 }
 .hero__container {
   max-inline-size: 76.875rem;
-  min-block-size: 100svh;
+  min-block-size: 70svh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
