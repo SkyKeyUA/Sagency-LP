@@ -217,3 +217,8 @@
     color: var(--pramary-bg);
   }
 }
+@media (max-width: 479.98px) {
+  .header__text {
+    font-size: 0.75rem; /* 12/16 */
+  }
+}
