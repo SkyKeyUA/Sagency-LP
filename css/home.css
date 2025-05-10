@@ -103,6 +103,7 @@ html.loaded {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 2rem; /* 32/16 */
 }
 
 .logo-carousel__list li.active {
