@@ -281,10 +281,10 @@ html.loaded {
   block-size: 100%;
 }
 .swiper-slide__picture {
-  position: absolute;
-  inset-block-start: -5.375rem; /* 86/16 */
-  inset-inline-start: 50%;
-  transform: translateX(-50%);
+  flex-shrink: 0;
+  margin-inline: auto;
+  margin-block-start: -10.625rem;
+  margin-block-end: 0.625rem; /* 10/16 */
   inline-size: 100%;
   max-inline-size: 10.625rem; /* 170/16 */
   aspect-ratio: 1;
