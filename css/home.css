@@ -260,18 +260,17 @@ html.loaded {
 }
 
 .swiper-testimonials__slide {
+  block-size: auto;
   padding-block-start: 5.375rem; /* 86/16 */
   max-inline-size: 41.625rem; /* 666/16 */
-  block-size: 100% !important;
 }
 .swiper-testimonials__inner {
+  block-size: 100%;
   background-color: var(--testimonials--body-background);
   border-radius: 0.75rem;
   padding-block: 5.8125rem 4.1875rem;
   padding-inline: 2rem; /* 32/16 */
   text-align: center;
-  position: relative;
-  block-size: 100% !important;
 }
 .swiper-testimonials__body {
   max-inline-size: 35.625rem; /* 570/16 */
@@ -281,16 +280,12 @@ html.loaded {
   block-size: 100%;
 }
 .swiper-slide__picture {
-  display: flex;
   flex-shrink: 0;
-  flex-basis: 10.625rem; /* 170/16 */
   inline-size: 10.625rem; /* 170/16 */
-  block-size: 10.625rem; /* 170/16 */
   aspect-ratio: 1;
-  position: absolute;
-  inset-block-start: -5.375rem; /* 86/16 */
-  inset-inline-start: 50%;
-  transform: translateX(-50%);
+  margin-block-start: -10.625rem; /* -170/16 */
+  margin-inline: auto;
+  margin-block-end: 0.625rem; /* 10/16 */
   border-radius: 50%;
   border: 0.3125rem solid var(--background-red);
   background-color: var(--pramary-bg);

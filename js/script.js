@@ -144,7 +144,6 @@ function slidersInit() {
     initialSlide: 2,
     loopedSlides: 1,
     speed: 800,
-    autoHeight: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
