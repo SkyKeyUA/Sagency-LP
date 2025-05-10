@@ -572,6 +572,9 @@ html.loaded {
   .cards-offer article {
     padding-inline: 0.9375rem;
   }
+  .cards-offer li:nth-child(1) .cards-offer__title {
+    letter-spacing: 0;
+  }
   .connect__contacts {
     font-size: 0.875rem; /* 14/16 */
   }
