@@ -54,10 +54,10 @@ html.loaded {
 }
 .red-line__image {
   position: absolute;
-  inset-block-start: 4px;
+  inset-block-start: 0.25rem; /* 4/16 */
   inset-inline-end: 19.756%; /* 243/1230 */
   inline-size: 100%;
-  max-inline-size: 7.154472%; /* 88/1230 */
+  max-inline-size: 5.5rem; /* 88/16 */
   aspect-ratio: 88 / 52;
   background: url('../img/icons/double-chevron-down.svg') 0 0 / contain repeat-y;
   opacity: 1;
@@ -114,10 +114,7 @@ html.loaded {
 }
 
 .story__title {
-  font-family: var(--third-font-family);
-  font-size: 2rem; /* 32/16 */
   line-height: 0.9;
-  text-transform: capitalize;
   padding-block-end: 0.875rem; /* 14/16 */
   margin-block-end: 0.625rem;
   position: relative;
@@ -133,7 +130,6 @@ html.loaded {
   z-index: -1;
 }
 .story__text {
-  font-size: 1.3125rem; /* 21/16 */
   line-height: 1.62; /* 34/21 */
 }
 .offer__body {
@@ -145,10 +141,7 @@ html.loaded {
   box-shadow: var(--logo-carousel-shadow-color);
 }
 .offer__title {
-  font-family: var(--third-font-family);
-  font-size: 2rem; /* 32/16 */
   line-height: normal;
-  text-transform: capitalize;
   max-inline-size: 44.8125rem; /* 717/16 */
   padding-block-end: 0.875rem; /* 14/16 */
   border-block-end: 0.125rem solid var(--border-color);
@@ -211,8 +204,8 @@ html.loaded {
   content: '';
   position: absolute;
   inline-size: 100%;
-  inset-block-end: -42px;
-  max-inline-size: 88px;
+  inset-block-end: -2.625rem; /* 42/16 */
+  max-inline-size: 5.5rem; /* 88/16 */
   aspect-ratio: 88 / 52;
   background: url('../img/icons/double-chevron-down.svg') 0 0 / contain repeat-y;
   z-index: 2;
@@ -240,7 +233,6 @@ html.loaded {
   inline-size: fit-content;
 }
 .cards-offer__text {
-  font-size: 1.5rem; /* 24/16 */
   font-weight: 600;
   line-height: 1.42; /* 34/24 */
 }
@@ -258,10 +250,7 @@ html.loaded {
 .testimonials__title {
   color: var(--testimonials-title);
   text-align: center;
-  font-family: var(--third-font-family);
-  font-size: 2rem; /* 32/16 */
   line-height: normal;
-  text-transform: capitalize;
   margin-block-end: 1.875rem; /* 30/16 */
 }
 
@@ -298,7 +287,7 @@ html.loaded {
   transform: translateX(-50%);
   inline-size: 100%;
   max-inline-size: 10.625rem; /* 170/16 */
-  aspect-ratio: 126 / 130;
+  aspect-ratio: 1;
   border-radius: 50%;
   border: 0.3125rem solid var(--background-red);
   background-color: var(--pramary-bg);
@@ -380,7 +369,6 @@ html.loaded {
   margin-block-end: 0.625rem; /* 10/16 */
 }
 .connect__text {
-  font-size: 1.5rem; /* 24/16 */
   font-weight: 500;
   line-height: 1.417; /* 141.667% */
 }
@@ -462,13 +450,22 @@ html.loaded {
     background-color: var(--pramary-bg);
     z-index: -1;
   }
+  .story__text {
+    font-size: 1.3125rem; /* 21/16 */
+  }
   .story__text p:not(:last-child) {
     margin-block-end: 3rem; /* 48/16 */
+  }
+  .cards-offer__text {
+    font-size: 1.5rem; /* 24/16 */
   }
   .connect__container {
     max-inline-size: 76.875rem;
     display: grid;
     grid-template-columns: 659fr 404fr;
+  }
+  .connect__text {
+    font-size: 1.5rem; /* 24/16 */
   }
 }
 @media (min-width: 479.98px) {
@@ -519,6 +516,9 @@ html.loaded {
     min-block-size: 50svh;
     padding-block: 8.125rem 2.1875rem;
   }
+  .red-line__image {
+    max-inline-size: 2.75rem; /* 44/16 */
+  }
   .logo-carousel {
     max-inline-size: 82vw;
     aspect-ratio: 464 / 160;
@@ -535,6 +535,10 @@ html.loaded {
     padding-inline: 0.9375rem;
     padding-block: 2rem 4rem; /* 64/16 */
   }
+  .cards-offer article::after {
+    max-inline-size: 2.75rem; /* 44/16 */
+    inset-block-end: -1.375rem; /* 22/16 */
+  }
   .swiper-testimonials__inner {
     padding-block: 5.8125rem 3.1875rem;
   }
@@ -543,6 +547,9 @@ html.loaded {
   }
   .swiper-slide__phrase::after {
     inset-block-end: -1.5rem;
+  }
+  .connect__title {
+    font-size: 1.75rem; /* 28/16 */
   }
   .connect__content {
     margin-block-end: 1.5rem; /* 24/16 */
