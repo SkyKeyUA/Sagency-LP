@@ -429,7 +429,7 @@ html.loaded {
 }
 @media (min-width: 767.98px) {
   .hero__container {
-    padding-block: 15.3125rem 2.1875rem;
+    padding-block: 15.3125rem 1.25rem; /* 20/16 */
   }
   .logo-carousel {
     float: left;
@@ -511,7 +511,7 @@ html.loaded {
   }
   .hero__container {
     min-block-size: 50svh;
-    padding-block: 8.125rem 2.1875rem;
+    padding-block: 8.125rem 1.25rem; /* 20/16 */
   }
   .red-line__image {
     max-inline-size: 2.75rem; /* 44/16 */
