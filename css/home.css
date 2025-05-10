@@ -462,6 +462,10 @@ html.loaded {
     float: left;
     margin-inline-end: 2.5rem;
   }
+  .logo-carousel__items {
+    column-gap: 0.5rem; /* 8/16 */
+    font-size: 2.5rem; /* 40/16 */
+  }
   .story__title::before {
     inset-inline-end: 2.0625rem;
   }
