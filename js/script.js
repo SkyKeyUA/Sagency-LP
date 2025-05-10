@@ -113,8 +113,10 @@ function logoCarouselInit() {
 
   function showNextLogo() {
     const current = logoItems[index];
-
     current.classList.add('active');
+
+    const isLast = index === logoItems.length - 1;
+    const delay = isLast ? 3000 : 750;
     setTimeout(() => {
       current.classList.remove('active');
       current.classList.add('fade-out');
@@ -123,11 +125,10 @@ function logoCarouselInit() {
         current.classList.remove('fade-out');
 
         index = (index + 1) % logoItems.length;
-        const delay = index === 0 ? 2500 : 0;
 
-        setTimeout(showNextLogo, delay);
+        showNextLogo();
       }, 750);
-    }, 750);
+    }, delay);
   }
 
   if (logoItems.length > 0) {

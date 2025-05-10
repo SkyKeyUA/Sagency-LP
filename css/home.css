@@ -103,7 +103,6 @@ html.loaded {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem; /* 32/16 */
 }
 
 .logo-carousel__list li.active {
@@ -113,7 +112,34 @@ html.loaded {
 .logo-carousel__list li.fade-out {
   opacity: 0;
 }
-
+.logo-carousel__items {
+  column-gap: 0.25rem; /* 4/16 */
+  font-size: 2rem; /* 32/16 */
+  font-family: var(--third-font-family);
+}
+.logo-carousel__items span {
+  opacity: 0;
+  transform: translateX(-1.25rem);
+}
+.logo-carousel__items.active span {
+  animation: zip-in 2s ease forwards;
+}
+.logo-carousel__items.active span:nth-child(1) {
+  animation-delay: 0.4s;
+}
+.logo-carousel__items.active span:nth-child(2) {
+  animation-delay: 0.8s;
+}
+.logo-carousel__items.active span:nth-child(3) {
+  animation-delay: 1.2s;
+}
+.logo-carousel__items span:nth-child(2) {
+  font-style: italic;
+}
+.logo-carousel__items span:last-child {
+  font-weight: 700;
+  font-style: italic;
+}
 .story__title {
   line-height: 0.9;
   padding-block-end: 0.875rem; /* 14/16 */
