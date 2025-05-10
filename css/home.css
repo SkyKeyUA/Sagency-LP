@@ -281,6 +281,8 @@ html.loaded {
   block-size: 100%;
 }
 .swiper-slide__picture {
+  flex-shrink: 0;
+  flex-basis: 10.625rem; /* 170/16 */
   position: absolute;
   inset-block-start: -5.375rem; /* 86/16 */
   inset-inline-start: 50%;
