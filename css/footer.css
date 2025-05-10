@@ -122,3 +122,8 @@
     margin-inline: -0.9375rem; /* 15/16 */
   }
 }
+@media (max-width: 479.98px) {
+  .footer__text {
+    font-size: 0.75rem; /* 12/16 */
+  }
+}
