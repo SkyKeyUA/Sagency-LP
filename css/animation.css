@@ -48,7 +48,7 @@
     transform: rotate(0);
   }
 }
-@keyframes fade-in-100 {
+@keyframes opacity {
   to {
     opacity: 1;
   }

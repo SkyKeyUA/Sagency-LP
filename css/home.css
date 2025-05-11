@@ -129,7 +129,7 @@ html.loaded {
   animation-delay: 1s;
 }
 .logo-carousel__items.active span:nth-child(3) {
-  animation: fade-in-100 0.5s ease forwards, translateX 0.5s ease forwards;
+  animation: opacity 0.5s ease forwards, translateX 0.5s ease forwards;
   animation-delay: 2s;
 }
 .logo-carousel__items span:nth-child(2) {
