@@ -54,9 +54,18 @@
     transform: rotate(0);
   }
 }
-@keyframes zip-in {
+@keyframes zip-in-first-word {
+  to {
+    opacity: 0.2;
+  }
+}
+@keyframes zip-in-second-word {
+  to {
+    opacity: 0.5;
+  }
+}
+@keyframes zip-in-third-word {
   to {
     opacity: 1;
-    transform: translateX(0);
   }
 }
