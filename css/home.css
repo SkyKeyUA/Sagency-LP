@@ -342,6 +342,9 @@ html.loaded {
   line-height: 1.144; /* 114.411% */
   position: relative;
 }
+.swiper-slide__phrase p:not(:last-child) {
+  margin-block-end: 0.3125rem;
+}
 .swiper-slide__phrase::before,
 .swiper-slide__phrase::after {
   content: '';
