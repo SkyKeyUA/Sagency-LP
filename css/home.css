@@ -625,6 +625,10 @@ html.loaded {
   .cards-offer article::before {
     font-size: 17.5rem; /* 280/16 */
   }
+  .cards-offer li:nth-child(1) article::before,
+  .cards-offer li:nth-child(2) article::before {
+    font-size: 23.75rem; /* 380/16 */
+  }
   .swiper-testimonials__inner {
     padding-block: 5.8125rem 3.1875rem;
   }
