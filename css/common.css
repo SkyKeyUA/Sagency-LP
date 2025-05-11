@@ -1,11 +1,13 @@
 [class*='--cover'] img,
-[class*='--cover'] video {
+[class*='--cover'] video,
+[class*='--cover'] picture {
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
 }
 [class*='--contain'] img,
-[class*='--contain'] video {
+[class*='--contain'] video,
+[class*='--contain'] picture {
   inline-size: 100%;
   block-size: 100%;
   object-fit: contain;
