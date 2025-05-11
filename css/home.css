@@ -627,7 +627,7 @@ html.loaded {
   }
   .cards-offer li:nth-child(1) article::before,
   .cards-offer li:nth-child(2) article::before {
-    font-size: 22.5rem; /* 360/16 */
+    font-size: 21.25rem; /* 340/16 */
   }
   .swiper-testimonials__inner {
     padding-block: 5.8125rem 3.1875rem;
