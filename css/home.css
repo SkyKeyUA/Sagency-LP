@@ -122,14 +122,14 @@ html.loaded {
   transform: translateX(-1.25rem);
 }
 .logo-carousel__items.active span:nth-child(1) {
-  animation: zip-in-first-word 0.5s ease forwards, translateX 0.5s ease forwards;
+  animation: fade-in-20 0.5s ease forwards, translateX 0.5s ease forwards;
 }
 .logo-carousel__items.active span:nth-child(2) {
-  animation: zip-in-second-word 0.5s ease forwards, translateX 0.5s ease forwards;
+  animation: fade-in-50 0.5s ease forwards, translateX 0.5s ease forwards;
   animation-delay: 1s;
 }
 .logo-carousel__items.active span:nth-child(3) {
-  animation: zip-in-third-word 0.5s ease forwards, translateX 0.5s ease forwards;
+  animation: fade-in-100 0.5s ease forwards, translateX 0.5s ease forwards;
   animation-delay: 2s;
 }
 .logo-carousel__items span:nth-child(2) {

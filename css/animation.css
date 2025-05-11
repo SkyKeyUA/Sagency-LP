@@ -1,9 +1,3 @@
-@keyframes opacity {
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes translateY {
   to {
     transform: translateY(0);
@@ -54,18 +48,18 @@
     transform: rotate(0);
   }
 }
-@keyframes zip-in-first-word {
+@keyframes fade-in-100 {
   to {
-    opacity: 0.2;
+    opacity: 1;
   }
 }
-@keyframes zip-in-second-word {
+@keyframes fade-in-50 {
   to {
     opacity: 0.5;
   }
 }
-@keyframes zip-in-third-word {
+@keyframes fade-in-20 {
   to {
-    opacity: 1;
+    opacity: 0.2;
   }
 }
