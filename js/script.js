@@ -116,7 +116,7 @@ function logoCarouselInit() {
     current.classList.add('active');
 
     const isLast = index === logoItems.length - 1;
-    const delay = isLast ? 3000 : 750;
+    const delay = isLast ? 4000 : 750;
     setTimeout(() => {
       current.classList.remove('active');
       current.classList.add('fade-out');
