@@ -7,6 +7,7 @@
   /* colors */
   --primary-text: #3f3e3d;
   --pramary-bg: #ffffff;
+  --global-bg: #faf9f7;
 
   --testimonials-title: #000000;
   --testimonials--body-background: rgba(63, 62, 61, 0.6);
@@ -19,8 +20,20 @@
   --background-pink: #f36467;
 
   --border-color: rgba(234, 62, 59, 0.25);
+  --logo-carousel-bg: #f8f6f4;
   --logo-carousel-border-color: rgba(63, 62, 61, 0.25);
   --logo-carousel-shadow-color: 0px 4px 20px rgba(0, 0, 0, 0.25);
+
+  --the-first-offer-title-bg: #d69f27;
+  --the-first-offer-card-bg: #d69f2740;
+  --the-second-offer-title-bg: #2daba3;
+  --the-second-offer-card-bg: #2daba340;
+  --the-third-offer-title-bg: #3a6dae;
+  --the-third-offer-card-bg: #3a6dae40;
+  --the-fourth-offer-title-bg: #a05da7;
+  --the-fourth-offer-card-bg: #a05da740;
+  --the-fifth-offer-title-bg: #d07838;
+  --the-fifth-offer-card-bg: #d0783840;
 
   --body-cards-background-color: rgba(63, 62, 61, 0.03);
   --card-border-color: rgba(63, 62, 61, 0.2);
