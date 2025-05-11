@@ -404,7 +404,7 @@ html.loaded {
   position: absolute;
   inline-size: 1.5rem; /* 24/16 */
   aspect-ratio: 24 / 20;
-  background: url('../img/quotes.png') 0 0 / contain no-repeat;
+  background: url('../img/icons/quotes.svg') 0 0 / contain no-repeat;
 }
 
 .swiper-slide__phrase::before {
