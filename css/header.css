@@ -59,7 +59,7 @@
   transition: color 0.3s;
 }
 .menu a.active {
-  color: var(--pramary-bg);
+  color: var(--hover-text);
 }
 .header__text {
   color: var(--pramary-bg);
@@ -75,7 +75,7 @@
 }
 @media (any-hover: hover) {
   .menu a:hover {
-    color: var(--pramary-bg);
+    color: var(--hover-text);
   }
 }
 @media (min-width: 600px) {

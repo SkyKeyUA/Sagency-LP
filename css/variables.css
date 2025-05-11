@@ -43,6 +43,7 @@
 
   --contact-border: rgba(255, 255, 255, 0.8);
 
+  --hover-text: #f8f6f4;
   --hover-icon: brightness(0) invert(28%) sepia(78%) saturate(3802%) hue-rotate(236deg)
     brightness(98%) contrast(97%);
   --img-filter: brightness(0) invert(1);
